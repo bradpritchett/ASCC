@@ -36,6 +36,7 @@ const Request = () => {
 						<input type="text" placeholder="Enter User Email" onChange={event => setSearchEmail(event.target.value)} name="email" />
 					</div>
 					<input type="submit" value="Submit"></input>
+					<input type="button" value="Clear"></input>
 				</form>
 			</div>
 			<div>
