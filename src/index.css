@@ -24,11 +24,41 @@ form {
 }
 
 form div {
-    display: block;
-    padding: 7px 0;
+	display: block;
+	height:40px;
+	padding: 7px 0;
+	position: relative;
+	max-width: 500px;
+    margin: 0 auto;
     width: 100%;
 }
 
 form label {
-    padding: 0 7px;
+	padding: 0 7px;
+	position: absolute;
+	left: 0;
+	top: 14px;
+	font-weight: bold;
+}
+
+form input[type="text"] {
+    width: 250px;
+    position: relative;
+    left: 120px;
+    top: 7px;
+}
+
+form input[type="submit"] {
+    padding: 7px;
+    border-radius: 7px;
+    background: green;
+    color: white;
+}
+
+#results span {
+    display: inline-block;
+	margin: 0 2px;
+    padding: 7px 0;
+    position: relative;
+    top: -18px;
 }

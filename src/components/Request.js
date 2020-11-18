@@ -3,7 +3,7 @@ import Results from "./Results";
 import API from "../utils/API";
 
 const Request = () => {
-	const [initialResults, setInitialResults] = useState(null);
+	const [data, setInitialData] = useState(null);
 	const [searchName, setSearchName] = useState("");
 	const [searchEmail, setSearchEmail] = useState("");
 
@@ -15,10 +15,13 @@ const Request = () => {
 	function search() {
 		API.request()
 		.then(res => {
-			console.log(res)
-			setInitialResults(res.results)
+			console.log(res.results[0])
+			setInitialData(res.results[0]	)
 		})
 	};
+	function capitalizeFirstLetter(string) {
+		return setSearchName(string.charAt(0).toUpperCase() + string.slice(1));
+	  }
 
 	return (
 		<>
@@ -26,7 +29,7 @@ const Request = () => {
 				<form onSubmit={processSearch}>
 					<div>
 						<label>Last Name</label>
-						<input type="text" placeholder="Enter User Name" onChange={event => setSearchName(event.target.value)} name="name" />
+						<input type="text" placeholder="Enter User Name" onChange={event => capitalizeFirstLetter(event.target.value)} name="name" />
 					</div>
 					<div>
 						<label>Email</label>
@@ -36,7 +39,7 @@ const Request = () => {
 				</form>
 			</div>
 			<div>
-				<Results data={initialResults} name={searchName} email={searchEmail} />
+				<Results data={data} name={searchName} email={searchEmail} />
 			</div>
 		</>
 	)

@@ -1,6 +1,7 @@
 export default {
 	request: function() {
-		return fetch('https://randomuser.me/api/', {
+		let url = `https://randomuser.me/api/`;
+		return fetch(url, {
 			method: 'GET'
 		}).then(response => response.json());
 	}	
