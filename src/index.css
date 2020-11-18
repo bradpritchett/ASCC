@@ -108,6 +108,7 @@ form input[type="submit"] {
 		display: block;
 		position: initial;
 	}
-  /* CSS Rules Here */
-
+	#results {
+		width: 90%;
+	}
 }
