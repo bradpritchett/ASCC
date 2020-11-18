@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ASCC/static/css/main.bb1b42e1.chunk.css",
+    "main.css": "/ASCC/static/css/main.df4d304a.chunk.css",
     "main.js": "/ASCC/static/js/main.640c2222.chunk.js",
     "main.js.map": "/ASCC/static/js/main.640c2222.chunk.js.map",
     "runtime-main.js": "/ASCC/static/js/runtime-main.b601af36.js",
@@ -8,13 +8,13 @@
     "static/js/2.b35478f4.chunk.js": "/ASCC/static/js/2.b35478f4.chunk.js",
     "static/js/2.b35478f4.chunk.js.map": "/ASCC/static/js/2.b35478f4.chunk.js.map",
     "index.html": "/ASCC/index.html",
-    "static/css/main.bb1b42e1.chunk.css.map": "/ASCC/static/css/main.bb1b42e1.chunk.css.map",
+    "static/css/main.df4d304a.chunk.css.map": "/ASCC/static/css/main.df4d304a.chunk.css.map",
     "static/js/2.b35478f4.chunk.js.LICENSE.txt": "/ASCC/static/js/2.b35478f4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b601af36.js",
     "static/js/2.b35478f4.chunk.js",
-    "static/css/main.bb1b42e1.chunk.css",
+    "static/css/main.df4d304a.chunk.css",
     "static/js/main.640c2222.chunk.js"
   ]
 }
