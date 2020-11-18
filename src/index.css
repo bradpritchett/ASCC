@@ -48,17 +48,30 @@ form input[type="text"] {
     top: 7px;
 }
 
-form input[type="submit"] {
+form input[type="submit"], form input[type="button"] {
     padding: 7px;
     border-radius: 7px;
-    background: green;
-    color: white;
+    background:white;
+	color: black;
+	margin: 0 7px;
 }
-
+form input[type="submit"] {
+	background: green;
+	color:white;
+}
 #results span {
     display: inline-block;
 	margin: 0 2px;
     padding: 7px 0;
     position: relative;
     top: -18px;
+}
+
+div#results {
+    background: lightblue;
+    height: 50px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 7px;
+    border-radius: 7px;
 }
