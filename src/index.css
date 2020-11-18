@@ -89,3 +89,25 @@ form input[type="submit"] {
     float: left;
 }
 
+
+@media only screen
+  and (max-device-width: 812px)
+ {
+	form {
+		padding: 5px;
+		width: 90%;
+	}
+	form div {
+		height: 60px;
+	}
+	form input[type="text"] {
+		position: initial;
+		width: auto;
+	}
+	form label {
+		display: block;
+		position: initial;
+	}
+  /* CSS Rules Here */
+
+}
