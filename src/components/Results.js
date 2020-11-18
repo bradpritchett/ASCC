@@ -1,8 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
 const Results = (props) => {
-	console.log("props", props)
-	 
+ 
 	if (props.data === null) {
 		return (
 			<></>

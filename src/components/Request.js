@@ -15,8 +15,7 @@ const Request = () => {
 	function search() {
 		API.request()
 		.then(res => {
-			console.log(res.results[0])
-			setInitialData(res.results[0]	)
+			setInitialData(res.results[0])
 		})
 	};
 	function capitalizeFirstLetter(string) {
