@@ -18,14 +18,15 @@ const Request = () => {
 			setInitialData(res.results[0])
 		})
 	};
+	
 	function capitalizeFirstLetter(string) {
 		return setSearchName(string.charAt(0).toUpperCase() + string.slice(1));
-	  }
+	};
 
 	function clearForm() {
 		document.getElementById("searchForm").reset();
 		setInitialData(null);
-	}
+	};
 
 	return (
 		<>

@@ -12,7 +12,7 @@ const Results = (props) => {
 			<h2>Results</h2>
 			<div id="results">
 				<div>
-					<img src={props.data.picture.thumbnail}alt="" />
+					<img src={props.data.picture.thumbnail} alt={props.name} />
 					<span>{props.data.name.first}</span>
 					<span>{props.name}</span>
 					<span>{props.data.location.city},</span>
