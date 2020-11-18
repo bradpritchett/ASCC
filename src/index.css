@@ -65,15 +65,8 @@ form input[type="submit"] {
 	background: green;
 	color:white;
 }
-#results span {
-    display: inline-block;
-	margin: 0 2px;
-    padding: 7px 0;
-    position: relative;
-    top: -18px;
-}
 
-div#results {
+#results {
     background: lightblue;
     height: 50px;
     width: 500px;
@@ -81,3 +74,14 @@ div#results {
     padding: 7px;
     border-radius: 7px;
 }
+
+#results span {
+    display: inline-block;
+	margin: 0 2px;
+    padding: 7px 0;
+}
+
+#results img {
+    float: left;
+}
+
