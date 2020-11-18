@@ -23,10 +23,15 @@ const Request = () => {
 		return setSearchName(string.charAt(0).toUpperCase() + string.slice(1));
 	  }
 
+	function clearForm() {
+		document.getElementById("searchForm").reset();
+		setInitialData(null);
+	}
+
 	return (
 		<>
 			<div>
-				<form onSubmit={processSearch}>
+				<form onSubmit={processSearch} id="searchForm">
 					<div>
 						<label>Last Name</label>
 						<input type="text" placeholder="Enter User Name" onChange={event => capitalizeFirstLetter(event.target.value)} name="name" />
@@ -36,7 +41,7 @@ const Request = () => {
 						<input type="text" placeholder="Enter User Email" onChange={event => setSearchEmail(event.target.value)} name="email" />
 					</div>
 					<input type="submit" value="Submit"></input>
-					<input type="button" value="Clear"></input>
+					<input type="button" value="Clear" onClick={clearForm}></input>
 				</form>
 			</div>
 			<div>

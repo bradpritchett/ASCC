@@ -42,14 +42,18 @@ form label {
 }
 
 form input[type="text"] {
-    width: 250px;
+    border-radius: 7px;
+    border: 1px solid #000;
+	padding: 7px;
     position: relative;
     left: 120px;
-    top: 7px;
+	top: 7px;
+    width: 250px;
 }
 
 form input[type="submit"], form input[type="button"] {
-    padding: 7px;
+	padding: 7px;
+	border: 1px solid #000;
     border-radius: 7px;
     background:white;
 	color: black;
